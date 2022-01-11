@@ -1,6 +1,8 @@
 ![](media/gifs/clip_pytorch_logo_wide.gif)
 
-# :brain: Neural Cellular Automata + CLIP
+# :brain: Text-2-Cellular Automata
+
+Using Neural Cellular Automata + OpenAI CLIP
 (Work in progress)
 
 ### Examples
