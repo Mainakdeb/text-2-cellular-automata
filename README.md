@@ -2,20 +2,14 @@
 
 # :brain: Text-2-Cellular Automata
 
-Using Neural Cellular Automata + OpenAI CLIP
-(Work in progress)
+Generate Cellular Automata patterns from text prompts, using CLIP-guided Neural Cellular Automata (work in progress)
 
-### Examples
+## Gallery: 
+### "The Northern Lights" and "Meteor Shower"
+<img src=https://github.com/Mainakdeb/project-omega/blob/main/media/gifs/northern_lights_meteor_shower_collage_short.gif width=600>
 
-1. Text Prompt: Vaporwave Art
+### "Lava flowing deep in the forest" and "Chameleon Skin"
+<img src=https://github.com/Mainakdeb/project-omega/blob/main/media/gifs/jungle_lava_and_chameleon_collage.gif width=600>
 
-https://user-images.githubusercontent.com/57221122/147845473-2b345d87-348d-4cac-9987-d42b69bd4336.mp4
-
-2. Text Prompt: Starry Night
-
-https://user-images.githubusercontent.com/57221122/147845575-e8d4d808-78b7-4de4-92aa-34905412b597.mp4
-
-3. Text Prompt: Fish Underwater
-
-https://user-images.githubusercontent.com/57221122/147845577-620e0142-04a6-4530-b424-61e6dcc0648f.mp4
-
+### “The Lunar surface” and “The Martian surface” 
+<img src=https://github.com/Mainakdeb/project-omega/blob/main/media/gifs/lunar_and_martian_surface_collage.gif width=600>
