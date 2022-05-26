@@ -8,6 +8,14 @@ def perception(x):
   filters = torch.stack([identity_filter, sobel_filter, sobel_filter.T, laplacian_filter])
   return perchannel_conv(x, filters)
 
+def perchannel_conv(x, filters):
+  '''filters: [filter_n, h, w]'''
+  b, ch, h, w = x.shape
+  y = x.reshape(b*ch, 1, h, w)
+  y = torch.nn.functional.pad(y, [1, 1, 1, 1], 'circular')
+  y = torch.nn.functional.conv2d(y, filters[:,None])
+  return y.reshape(b, -1, h, w)
+  
 class ca_model(torch.nn.Module):
   def __init__(self, chn=12, hidden_n=96):
     super().__init__()
