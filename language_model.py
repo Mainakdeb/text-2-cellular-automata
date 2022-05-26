@@ -1,4 +1,7 @@
 import clip
+import torch
+
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 model, preprocess = clip.load("ViT-B/32")
 model.to(device).eval()
