@@ -5,6 +5,9 @@ sobel_filter = torch.tensor([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
 identity_filter = torch.tensor([[0, 0, 0], [0, 1, 0], [0, 0, 0],],dtype=torch.float32)
 laplacian_filter = torch.tensor([[1.0,2.0,1.0], [2.0,-12,2.0], [1.0,2.0,1.0]])
 
+def to_rgb(x):
+  return x[...,:3,:,:]+0.5
+
 def perception(x):
   filters = torch.stack([identity_filter, sobel_filter, sobel_filter.T, laplacian_filter]).to(device)
   return perchannel_conv(x, filters)
