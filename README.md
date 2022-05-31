@@ -8,6 +8,9 @@ Generate Cellular Automata patterns from text prompts, using CLIP-guided Neural 
 ### "Underwater Bioluminescence"
 <img src="https://github.com/Mainakdeb/project-omega/blob/main/media/gifs/underwater_bioluminescence_16:9_compressed.gif" width=500>
 
+### "Nose"
+<img src="https://github.com/Mainakdeb/text-2-cellular-automata/blob/main/media/gifs/nose_cropped_compressed.gif" width=500>
+
 ### "The Northern Lights" and "Meteor Shower"
 <img src=https://github.com/Mainakdeb/project-omega/blob/main/media/gifs/northern_lights_meteor_shower_collage_short.gif width=500>
 
