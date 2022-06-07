@@ -70,7 +70,7 @@ def show_video(video_path, video_width = 600):
 
 
 def create_inference_gif(ca_model, size, num_frames, steps_per_frame, fps, filename):
-    gif_arr=np.zeros((600, size,size, 3))
+    gif_arr=np.zeros((num_frames, size,size, 3))
 
     with torch.no_grad():
         x = ca_model.seed(1, size)
