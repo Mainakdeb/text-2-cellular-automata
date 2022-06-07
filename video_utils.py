@@ -35,10 +35,10 @@ class VideoWriter:
     if self.params['filename'] == '_autoplay.mov':
       self.show()
 
-  def show(self, **kw):
-      self.close()
-      fn = self.params['filename']
-      display(mvp.ipython_display(fn, **kw))
+def show(self, **kw):
+    self.close()
+    fn = self.params['filename']
+    display(mvp.ipython_display(fn, **kw))
 
 def zoom(img, scale=4):
    img = np.repeat(img, scale, 0)
@@ -69,7 +69,7 @@ def show_video(video_path, video_width = 600):
     return HTML(f"""<video width={video_width} controls><source src="{video_url}"></video>""")
 
 
-def C(ca_model, size, num_frames, steps_per_frame, fps, filename):
+def create_inference_gif(ca_model, size, num_frames, steps_per_frame, fps, filename):
     gif_arr=np.zeros((600, size,size, 3))
 
     with torch.no_grad():
