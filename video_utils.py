@@ -4,7 +4,7 @@ import imageio
 from base64 import b64encode
 import moviepy.editor as mvp
 from moviepy.video.io.ffmpeg_writer import FFMPEG_VideoWriter
-
+import torch
 
 class VideoWriter:
   def __init__(self, filename='./_autoplay.mov', fps=60.0, **kw):
@@ -68,7 +68,7 @@ def show_video(video_path, video_width = 600):
     return HTML(f"""<video width={video_width} controls><source src="{video_url}"></video>""")
 
 
-def create_inference_gif(ca_model, size, num_frames, steps_per_frame, fps, filename):
+def C(ca_model, size, num_frames, steps_per_frame, fps, filename):
     gif_arr=np.zeros((600, size,size, 3))
 
     with torch.no_grad():
