@@ -5,6 +5,7 @@ from base64 import b64encode
 import moviepy.editor as mvp
 from moviepy.video.io.ffmpeg_writer import FFMPEG_VideoWriter
 import torch
+from IPython.display import  HTML
 
 class VideoWriter:
   def __init__(self, filename='./_autoplay.mov', fps=60.0, **kw):
