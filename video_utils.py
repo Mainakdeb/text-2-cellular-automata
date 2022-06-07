@@ -78,7 +78,8 @@ def create_inference_gif(ca_model, size, num_frames, steps_per_frame, fps, filen
         for k in tnrange(num_frames, leave=False):
             for i in range(steps_per_frame):
                 x[:] = ca_model(x)
-            img = to_rgb(x[0]).permute(1, 2, 0).cpu()
+            img = x[0][...,:3,:,:].permute(1, 2, 0).cpu()
+            img += 0.5
             gif_arr[k]=img
 
     with imageio.get_writer(filename, mode='I', fps=fps) as writer:
