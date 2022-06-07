@@ -85,6 +85,6 @@ def create_inference_gif(ca_model, size, num_frames, steps_per_frame, fps, filen
     with imageio.get_writer(filename, mode='I', fps=fps) as writer:
         for out in gif_arr:
             writer.append_data(out)
-        writer.close()
+    writer.close()
 
     return(filename)
