@@ -1,6 +1,7 @@
 ![](media/gifs/clip_pytorch_logo_wide.gif)
 
 # :brain: Text-2-Cellular Automata
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mainakdeb/project-omega/blob/main/clip_nca.ipynb)
 
 Generate Cellular Automata patterns from text prompts, using CLIP-guided Neural Cellular Automata (work in progress)
 
